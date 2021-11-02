@@ -32,7 +32,7 @@ CSS
 
 </head>
 
-<body onload="playMusic()">
+<body>
 
     <!-- Preloader -->
     <div id="loader-wrapper">
@@ -50,11 +50,6 @@ CSS
                     <nav class="dope-navbar justify-content-between" id="dopeNav">
 
                         <!-- Logo -->
-                        <div class="border border-danger rounded-circle"
-                            style="width: 32px; height: 30px; display: flex;">
-                            <span id="songIcon" class="ti-control-pause"
-                                style="margin-left: 6px; margin-top: 4px; font-size: 18px;"></span>
-                        </div>
 
                         <!-- Navbar Toggler -->
                         <div class="dope-navbar-toggler">
@@ -588,10 +583,6 @@ CSS
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
-    <audio id="mySong">
-        <source src="audio/song.mp3" type="audio/mp3">
-    </audio>
-
     <!--
 JS
 ============================================= -->
@@ -607,23 +598,6 @@ JS
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/main.js"></script>
     <script src="//code.tidio.co/gvipy5v5lma7g7algurzydp9szzin9rj.js" async></script>
-    <script>
-        var mySong = document.getElementById("mySong");
-        var icon = document.getElementById("songIcon");
-        icon.onclick = function () {
-            if (mySong.paused) {
-                mySong.play();
-                icon.className = "ti-control-pause";
-            } else {
-                mySong.pause();
-                icon.className = "ti-control-play"
-            }
-        }
-
-        function playMusic() {
-            mySong.play();
-        }
-    </script>
 </body>
 
 </html>
