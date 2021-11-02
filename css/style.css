@@ -3058,6 +3058,7 @@ td, th {
   box-shadow: 0 0 20px #2696E8,
   0 0 60px #2696E8,
   0 0 100px #2696E8;
+  z-index: 9999;
 }
 
 .cursor2 {
@@ -3070,6 +3071,7 @@ td, th {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
+  z-index: 9999;
 }
 
 .hover {
